@@ -1,0 +1,86 @@
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 400px; /* Adjust based on your design */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.product-card h3,
+.product-card p {
+  margin: 5px 0;
+}
+
+.price {
+  font-weight: bold;
+  color: #2e8b57;
+}
+
+.rating {
+  color: #ffa500;
+}
+
+.description {
+  font-size: 0.9em;
+  color: #555;
+  flex-grow: 1; /* Pushes button to bottom */
+}
+
+.stock {
+  font-size: 0.85em;
+  color: #008000;
+}
+
+.buy-button {
+  margin-top: auto;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buy-button:hover {
+  background-color: #271cff;
+  color: white;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.remove-button {
+  margin-top: auto;
+  padding: 8px 16px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  background-color: rgb(132, 3, 3);
+  color: white;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
